@@ -15,7 +15,7 @@ body {
 
 
 header  {
-    background: yellow url(background.png) no-repeat;
+    background: #ffaa00 url(background.png) no-repeat;
     background-size: cover;   
     padding-top: 70px;
     padding-bottom: 155px;
@@ -184,7 +184,9 @@ header .logo {
         -ms-flex-align: center;
             align-items: center;
 }
-
+.feedback h2, .contacts h2 {
+    font-size: 32px;
+}
 .feedback img {
     margin-right: 2rem;
 }
