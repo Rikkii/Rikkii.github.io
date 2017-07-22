@@ -1,0 +1,443 @@
+html {
+    font-family:  sans-serif;
+}
+
+body {
+   margin: 0;
+   padding: 0; 
+}
+
+.container {
+   margin: 0 auto;
+   width: 95%;
+   max-width: 980px;
+}
+
+
+header  {
+    background: yellow url(background.png) no-repeat;
+    background-size: cover;   
+    padding-top: 70px;
+    padding-bottom: 155px;
+    overflow: hidden; 
+}
+
+
+
+header .logo {
+    float: left;
+}
+
+.main-menu {
+    float: right;
+    font-size: 0
+}
+.main-menu li {
+    display: inline;
+    padding: 0 15px;
+    border-right: 2px solid black;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.main-menu li:last-child {
+    padding: 0;
+    padding-left: 15px;
+    border: 0px
+}
+    
+@media (max-width: 780px) {
+    header .logo, .main-menu {float: none; width: 95%; text-align: center;}
+    .main-menu li, .main-menu li:last-child  {padding: 0 5px;}
+    header .logo {margin-bottom: 1rem}
+    header {padding: 2rem 0}
+}
+
+
+
+.header-top::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.main-menu a {
+    color: black;
+    text-decoration: none;
+}
+.main-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 30px;
+}
+.main-menu a:hover {
+    text-decoration: underline;
+}
+
+
+.promo {
+   width: 490px;
+   margin-top: 140px;
+   position: relative;
+   z-index: 10;
+    
+}
+.promo-title {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.btn {
+    display: block;
+    background: #00b770;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.promo .btn-green {
+   padding: 25px 70px;
+    margin-top: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+.btn-green:hover {
+    background: #00a666
+}
+.btn-green:active {
+    color: #74c39e; 
+}
+
+@media (min-width: 780px) {
+    .promo .btn-green {width: 200px}
+}
+.promo::after {
+    content: "";
+    position: absolute;
+    width: 830px;
+    height: 433px;
+    background: url(items.png);
+    z-index: -1;
+    top: -14px;
+    left: 225px;
+}
+
+@media (max-width: 780px) {
+    .promo::after {display:none}
+    .promo {width: 80%; margin: 20px 10%; text-align: center}
+    .promo-title {font-size: 32px}
+    .promo .btn-green {margin: 0 auto}
+}
+
+
+
+.features {
+    background: #efefef;
+    padding-bottom: 1rem;
+}
+
+.features .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.features-item {
+    width: 30%;
+    margin-right: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.features-icon {
+    margin-top: -20px;
+}
+
+@media (max-width: 600px) {
+    
+    .features .container {display: block; padding-top: 1rem}
+    .features-icon {margin-top: 0}
+    .features-item {width: 80%; margin: 0 auto; text-align: center}
+}
+
+@media (max-width: 400px) {
+    .features-item {width: 90%}
+}
+
+
+
+
+
+.feedback {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.feedback img {
+    margin-right: 2rem;
+}
+
+blockquote::before {
+    content: url(anti-quote.png);
+}
+
+blockquote::after {
+    content: url(quote.png);
+    float: right;
+}
+
+blockquote h3 {
+    margin-top: 0;
+}
+blockquote p {
+    margin-bottom: 0;
+}
+.feedback-all {
+    color: black;
+    margin-left: 3rem;
+    white-space: nowrap;
+}
+
+.feedback-all:hover {
+    color: #00b770;
+}
+
+.feedback-all:active {
+    color: #cae6d8
+}
+.feedback-all::after {
+    content: url(dots.png);
+    margin-left: 1.2rem;
+}
+
+.feedback-all:active::after {
+    content: url(dots-active.png)
+}
+.feedback-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-transform: uppercase;
+}
+@media (max-width: 600px) {
+    .feedback {display: block; text-align: center;}
+    .feedback img {margin: 0}
+    .feedback blockquote::after {float: none}
+}
+.info p {
+    white-space: nowrap;
+}
+@media (max-width: 460px) {
+    .feedback-top {-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; padding-bottom: 1rem}
+    .feedback-all {margin: 0}
+    blockquote {padding: 0; margin-bottom: 1rem}
+}
+
+
+
+.contacts {
+    background: #efefef;
+    padding: 15px 0
+}
+.contacts::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+table {
+    width: 100%
+}
+.contacts h2 {
+    text-transform: uppercase;
+    margin-top: 0
+}
+
+input[type="text"], textarea {
+    padding: 15px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    border: 2px solid #b2b2b2;
+}
+.contacts input[type="text"]:hover,
+.contacts textarea:hover {
+    border: 2px solid #7f7f7f; 
+} 
+input[type="text"], 
+input[type="radio"], 
+textarea {
+    margin-bottom: 10px
+}
+
+.contacts .btn-green {
+   padding: 25px 0;
+    border: 0;
+    width: 100%;
+}
+tr > td:first-child {
+    width: 70px;
+    text-align: right;
+    font-weight: bold
+}
+
+@media (min-width: 780px) {
+    table {float: left; width: 58%}
+    .contacts-instruction {float: right; width: 40%;}
+    .contacts-instruction h3 {margin-top: 0}
+
+}
+@media (max-width: 500px) {
+    .contacts input, textarea {font-size: 16px;}
+}
+
+
+
+
+
+footer {
+    padding: 50px 0;
+    background: #1f2022;
+    color: white;
+}
+footer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+footer li {
+    list-style: none;
+    margin-bottom: 10px
+}
+footer ul {
+    margin: 0;
+    padding: 0;
+    
+}
+.footer-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+     -webkit-box-pack: justify;
+         -ms-flex-pack: justify;
+             justify-content: space-between
+}
+.footer-menu  {
+   margin-right: 20px
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: #ffcc00;
+}
+.footer-menu a:hover {
+    text-decoration: underline;
+}
+footer h3 {
+    margin-top: 0;
+}
+.footer-address {
+    width: 30%;
+    margin-right: 20px;
+}
+
+.footer-top:after {
+    content: "";
+    display: block;
+    clear: both
+}
+.footer-bottom {
+    margin-top: 40px
+}
+@media (max-width: 780px) {
+    .footer-top {display: block}
+    .footer-address {display: -webkit-box;display: -ms-flexbox;display: flex; width: 100%; height: 81px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 20px}
+    footer .logo {margin-right: 4%}
+    .footer-address p {margin: 0}
+    .footer-menu {float: left; width:22%; margin-right: 4% }
+    .footer-menu:last-child {margin-right: 0}
+}
+
+@media (max-width: 550px) {
+    .footer-menu {width: 45%}
+}
+.footer-bottom > div {
+    display: inline-block
+}
+.copyright {
+    margin-right:3rem;
+    margin-bottom: 0.7rem
+}
+.footer-social-promo {
+    float: right
+}
+.footer-social {
+    font-size: 0;
+    text-align: right;
+    margin-top: 1rem
+}
+
+@media (max-width: 700px) {
+    .footer-social-promo {float: none}
+    .footer-social {text-align: left}
+}
+.social-btn {
+    margin-right: 20px;
+}
+
+.social-btn-vk {
+    display: inline-block;
+    height: 24px;
+    width: 36px;
+    background: url(vk.png)
+}
+.social-btn-fb {
+    display: inline-block;
+    height: 35px;
+    width: 23px;
+    background: url(fb.png)
+}
+.social-btn-tw {
+    display: inline-block;
+    height: 30px;
+    width: 36px;
+    background: url(tw.png);
+}
+.social-btn:hover, .social-btn:active {
+    background: url(sprites.png)
+}
+
+.social-btn-vk:active {
+    background-position:  0 36px;
+}
+.social-btn-fb:hover {
+    background-position:  70px 0
+}
+.social-btn-fb:active {
+    background-position: 70px 36px
+}
+.social-btn-tw:hover {
+    background-position: 36px 0
+}
+.social-btn-tw:active {
+    background-position: 36px 36px
+}
