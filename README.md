@@ -1,2 +1,2 @@
 # Rikkii.github.io
-My first hosting.
+My first hosting. Hello!
