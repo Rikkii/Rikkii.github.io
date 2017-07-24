@@ -195,11 +195,11 @@ header .logo {
     margin-right: 2rem;
 }
 
-blockquote::before {
+.feedback blockquote::before {
     content: url(anti-quote.png);
 }
 
-blockquote::after {
+.feedback blockquote::after {
     content: url(quote.png);
     float: right;
 }
