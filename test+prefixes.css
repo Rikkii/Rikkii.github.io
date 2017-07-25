@@ -47,10 +47,10 @@ header .logo {
 }
     
 @media (max-width: 780px) {
-    header .logo, .main-menu {float: none; width: 95%; text-align: center;}
+    header .logo, .main-menu {float: none; width: 95%;}
     .main-menu li, .main-menu li:last-child  {padding: 0 5px;}
     header .logo {margin-bottom: 1rem}
-    header {padding: 2rem 0}
+    header {padding: 2rem 0; text-align: center}
 }
 
 
@@ -179,7 +179,9 @@ header .logo {
 
 
 
-
+.features + section {
+    overflow: hidden
+}
 .feedback {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -268,7 +270,7 @@ blockquote p {
     clear: both;
     display: block;
 }
-.contacts table {
+table {
     width: 100%
 }
 .contacts h2 {
@@ -450,9 +452,7 @@ footer h3 {
 .social-btn-tw:active {
     background-position: 36px 36px
 }
-.inner header {
-    padding-bottom: 50px;
-}
+
 @media (max-width: 768px) {
     
 }
