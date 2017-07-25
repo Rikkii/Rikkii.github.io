@@ -453,8 +453,8 @@ footer h3 {
     background-position: 36px 36px
 }
 
-@media (max-width: 768px) {
-    
+.inner header {
+    padding-bottom: 0   
 }
 .content  {
     padding-top: 90px;
