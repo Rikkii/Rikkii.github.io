@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Pattaya&subset=cyrillic');
+
+
+body, p {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lora', serif; 
+}
+
+body > div {
+    background: gray;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    color: white;
+    text-align: center;
+}
+.number {
+    font-size: 24px;
+    font-weight: bold;
+}
+.order {
+    display: inline;
+    margin: 0 auto;
+    font-size: 18px;
+    color: red;
+    border-bottom: 2px dotted;
+    text-decoration: none;
+}
+.present {
+    background: url(border.png) no-repeat center 25px;
+    height: 270px;
+    margin-top: 15px;
+}
+
+.present h1 {
+    Font-size: 80px;
+    color: red;
+    font-family: 'Pattaya', sans-serif;
+    letter-spacing: 10px;
+    padding: 0;
+    margin: 0;
+    line-height: 80px;
+    padding-bottom: 8px
+        
+}
+.present h2 {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 32px;
+    text-shadow: black 1px 1px 0, black -1px -1px 0, 
+                 black -1px 1px 0, black 1px -1px 0;
+}
+.promo {
+    width: 310px;
+    margin: 0 auto;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.features {
+    width: 100%;
+    max-width: 765px;
+    margin: 0 auto;
+
+}
+.features-item {
+    width: 33.3%;
+    float: left;
+}
+.features:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.features-icon {
+    background: url(icons-features.png) no-repeat;
+    height: 39px;
+    margin: 0 auto;
+}
+.features-icon-prices {
+    width: 40px;
+}
+.features-icon-location {
+    width: 42px;
+    background-position: -50px 0;
+}
+.features-icon-atmosphere {
+    width: 30px;
+    background-position: -100px
+}
