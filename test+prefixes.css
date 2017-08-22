@@ -263,14 +263,14 @@ blockquote p {
 
 .contacts {
     background: #efefef;
-    padding: 15px 0
+    padding: 15px 0;
 }
 .contacts::after {
     content: "";
     clear: both;
     display: block;
 }
-table {
+.contacts-form table {
     width: 100%
 }
 .contacts h2 {
@@ -290,7 +290,11 @@ input[type="text"], textarea {
 .contacts input[type="text"]:hover,
 .contacts textarea:hover {
     border: 2px solid #7f7f7f; 
-} 
+}
+.contacts input[type="text"]:focus,
+.contacts textarea:focus {
+    outline: 2px solid #635f5f
+}
 input[type="text"], 
 input[type="radio"], 
 textarea {
@@ -308,13 +312,13 @@ textarea {
     font-weight: bold
 }
 
-@media screen and screen and (min-width: 780px) {
-    table {float: left; width: 58%}
+@media (min-width: 780px) {
+    .contacts-form table {float: left; width: 58%}
     .contacts-instruction {float: right; width: 40%;}
     .contacts-instruction h3 {margin-top: 0}
 
 }
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
     .contacts input, textarea {font-size: 16px;}
 }
 
