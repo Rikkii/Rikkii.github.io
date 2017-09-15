@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Pattaya&subset=cyrillic');
+
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lora', serif;
+    color: white;
+    text-align: center;
+}
+
+.main {
+    background: url(background-present.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    
+}
+
+.number {
+    font-size: 24px;
+    font-weight: bold;
+}
+.order {
+
+    font-size: 18px;
+    color: red;
+    border-bottom: 2px dotted;
+    text-decoration: none;
+}
+.present {
+    background: url(border.png) no-repeat center 25px;
+    height: 270px;
+    margin-top: 15px;
+}
+.heading {
+    color: red;
+    font-family: 'Pattaya', sans-serif;
+    letter-spacing: 5px;
+    font-size: 40px;;
+    margin: 0;
+    padding: 0;
+}
+.present .heading {
+    Font-size: 80px;
+    letter-spacing: 10px;
+    line-height: 80px;
+    padding-bottom: 8px
+        
+}
+@media (max-width: 530px) {
+    .present .heading {font-size: 60px; letter-spacing: 5px}
+}
+.pre-heading {
+    font-size: 32px;
+    margin: 0;
+}
+.present .pre-heading {
+    margin-top: 10px;
+    text-shadow: black 1px 1px 0, black -1px -1px 0, 
+                 black -1px 1px 0, black 1px -1px 0;
+}
+@media (max-width: 400px) {
+    .present .heading {font-size: 50px;
+    margin-top: 15px}
+    .present .pre-heading {font-size: 28px}
+}
+.promo {
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 90%;
+}
+.main .promo {
+    font-size: 24px;
+}
+.features {
+    width: 100%;
+    max-width: 765px;
+    margin: 0 auto;
+
+}
+.features-item {
+    width: 33.3%;
+    float: left;
+
+}
+@media (max-width: 425px) {
+    .features-item {width: 80%; margin: 0 auto; float: none}
+}
+.features:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.features-icon {
+    background: url(icons-features.png) no-repeat;
+    height: 39px;
+    margin: 0 auto;
+}
+.features-icon-prices {
+    width: 40px;
+}
+.features-icon-location {
+    width: 42px;
+    background-position: -50px 0;
+}
+.features-icon-atmosphere {
+    width: 30px;
+    background-position: -100px
+}
+
+
+
+.services {
+    background: #262626 url(services-background.png); 
+    padding: 30px 0;
+    position: relative;
+    font-size: 0;
+}
+
+.services-item {
+    width: 320px;
+    display: inline-block;
+    font-size: 16px;
+    
+}
+.services-item-icon {
+    background: url(service-icons.png);
+    width:  320px;
+    height: 290px;
+}
+.services-item:nth-of-type(2) .services-item-icon {
+    background-position: 336px 0
+}
+.services-item:nth-of-type(3) .services-item-icon {
+    background-position: 677px 0
+}
+.services-item:nth-of-type(4) .services-item-icon {
+    background-position: 0 290px
+}
+.services-item:nth-of-type(5) .services-item-icon {
+    background-position: 336px 290px
+}
+.services-item:nth-of-type(6) .services-item-icon {
+    background-position: 677px 290px
+}
+.services-item h3 {
+    color: #fddd49
+}
+.microphone {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    background: url(microphone.png);
+    height: 515px;
+    width: 91px
+}
+@media (max-width: 768px) {
+    .microphone {display: none}
+}
+
+
+
+.contacts {
+    background: #f3dd30;
+    color: black;
+    position: relative;
+    padding: 30px 0
+}
+input[type="text"] {
+    background: #f3dd30;
+    border: 0;
+    border-bottom: 2px solid black;
+    opacity: 
+}
+
+.contacts .promo-img {
+    position: absolute;
+    width: 50%;
+    max-width: 400px;
+    bottom: 0;
+    left: 5%;
+
+}
+.contacts .info-form {
+    float: right;
+    width: 40%;
+    margin-right: 5%;
+
+}
+.contacts .heading {
+    color: black;
+    font-size: 80px;
+    display: inline-block;
+  
+}
+.contacts input {
+    width: 100%;;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+.contacts::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.contacts input[type="submit"] {
+    padding: 10px;
+    background: black;
+    border-radius: 25px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    border: 0
+}
+.contacts input[type="text"] {
+    padding: 5px;
+    padding-left: 30px;
+    
+}
+.contacts input[type="text"]:first-child {
+    background: url(icons8-profile.png) no-repeat 2px
+}
+.contacts input[type="text"]:nth-of-type(2) {
+    background: url(icons8-telephone.png) no-repeat 2px
+}
+.contacts input[type="text"]:hover {
+    border-bottom: 4px solid black
+}
+.contacts input[type="text"]:focus {
+    outline: 1px solid black
+}
+.contacts input[type="submit"]:hover {
+    border: 5px solid black
+}
+.contacts input[type="submit"]:focus {
+    color: lightslategray
+}
+@media screen and (min-width: 1100px) {
+    .contacts .info-form {margin-right: 15%}
+}
+@media screen and (max-width: 700px) {
+    .contacts .promo-img {display: none}
+    .contacts .info-form {width: 90%}
+}
