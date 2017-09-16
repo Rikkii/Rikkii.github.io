@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lora|Pattaya&subset=cyrillic');
 @font-face {
     font-family: Lifehack;
-    src: url('DearType - Lifehack Italic.otf') format('otf')
-};
+    src: url('DearType - Lifehack Italic.otf') format('otf');
+}
 
 body {
     padding: 0;
