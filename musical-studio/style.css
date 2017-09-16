@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lora|Pattaya&subset=cyrillic');
 @font-face {
-    font-family: Lifehack;
+    font-family: 'Lifehack';
     src: url('DearType - Lifehack Italic.otf') format('otf');
 }
 
@@ -39,7 +39,7 @@ body {
 }
 .heading {
     color: red;
-    font-family: 'Pattaya', sans-serif;
+    font-family: 'Lifehack', 'Pattaya', sans-serif;
     letter-spacing: 5px;
     font-size: 40px;;
     margin: 0;
