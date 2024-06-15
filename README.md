@@ -1,3 +1,8 @@
+
 # Rikkii.github.io
-My first hosting. Hello!
-Можно посмотреть результат на https://rikkii.github.io/web-school/
+
+Проекты по фронтенд-разработке:
+
+- [Школа веб-программирования](https://rikkii.github.io/web-school/): мой первый проект! макет взят с курса по фронтенд-разработке
+- [Музыкальная студия](https://rikkii.github.io/musical-studio/): проект для портфолио, макет взят из открытых источников
+
